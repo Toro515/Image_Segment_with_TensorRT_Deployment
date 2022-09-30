@@ -7,9 +7,11 @@ This is an experimental project. Due to the poor clarity of my camera and the fa
 4. Writing C++ project using VS2017 to implement accelerated inference for TensorRT. Implementing image super-resolution and outputting clear video files.
 
 # Required environments
-*I will gradually update the configuration information according to the progress of the project. The known configurations are as follows.
- Nvidia GTX1650Ti 4GB
- onnx 1.12.0
- onnxruntime-gpu 1.12.1
- pytorch 1.12.1
- torchvision 0.13.1
+*I will gradually update the configuration information according to the progress of the project.*  
+The known configurations are as follows,
+1. Nvidia GTX1650Ti 4GB
+2. onnx 1.12.0
+3. onnxruntime-gpu 1.12.1
+4. pytorch 1.12.1
+5. torchvision 0.13.1
+6. 
