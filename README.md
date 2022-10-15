@@ -32,6 +32,7 @@ win10, cuda = 11.2，cudnn = 8.1.1，TensorRT= 8.2.5， g++ >= 5.4 (推荐8.2)�
 7. 运行以及编译。将上述的dll文件以及模型与测试图像放在exe所在目录后，cmd跳转至exe目录，输入`unet_segment_trt_infer Unet_cityscapes_without_argmax_infer city_car_demo.png 2`回车即可实现基于GPU与TensorRT的加速推理。输出结果可见当前目录下的vis_result。实验结果如下：
 
 ![city_car_demo](https://user-images.githubusercontent.com/114713988/195964794-dabaddf3-b983-445e-8708-14e32b8729b2.png)
-![vis_result](https://user-images.githubusercontent.com/114713988/195964791-35176dbb-b259-49f4-b5ae-4c9724d20ed3.jpg)
+![vis_result](https://user-images.githubusercontent.com/114713988/195984140-4f371194-a1ca-479e-92c0-53e5cd4efbf4.jpg)
+
 
 
