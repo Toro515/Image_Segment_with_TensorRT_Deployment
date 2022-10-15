@@ -22,3 +22,5 @@ win10, cuda = 11.2，cudnn = 8.1.1，TensorRT= 8.2.5， g++ >= 5.4 (推荐8.2)�
 * 编译完成后，在Visual Studio 2019点击`INSTALL`->右键点击`生成`将编译好的SDK安装到先前指定的目录，到此部署库已经编译完成。
 
 ## 图像分割使用TensorRT在GPU上加速推理
+代码可以直接使用已给出的代码。步骤具体可以参考[在 Windows 使用 FastDeploy C++ SDK](https://github.com/PaddlePaddle/FastDeploy/blob/develop/docs/compile/how_to_use_sdk_on_windows.md#32-sdk%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F%E4%BA%8Cvisual-studio-2019-%E5%88%9B%E5%BB%BA-sln-%E5%B7%A5%E7%A8%8B%E4%BD%BF%E7%94%A8-c-sdk)：
+1. 首先在VS2019创建一个控制台应用，然后将
