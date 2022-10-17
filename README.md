@@ -1,5 +1,5 @@
 # Image Segment C++ with TensorRT deployment on Nvidia GTX1650Ti
-在本页，我将分享关于图像分割算法使用TensorRT与VS2019，并部署到GTX1650显卡上推理的过程。
+图像语义分割算法HRNet使用TensorRT与VS2019，并使用GTX1650显卡加速推理的过程。
 
 ## 软件环境
 win10, cuda = 11.2，cudnn = 8.1.1，TensorRT= 8.2.5， g++ >= 5.4 (推荐8.2)，Cmake>=3.10， VS2019，其余包都不需要安装了，opencv包会在代码编译过程中自动下载
