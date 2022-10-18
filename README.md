@@ -34,5 +34,9 @@ win10, cuda = 11.2，cudnn = 8.1.1，TensorRT= 8.2.5， g++ >= 5.4 (推荐8.2)�
 ![city_car_demo](https://user-images.githubusercontent.com/114713988/195964794-dabaddf3-b983-445e-8708-14e32b8729b2.png)
 ![vis_result](https://user-images.githubusercontent.com/114713988/195984140-4f371194-a1ca-479e-92c0-53e5cd4efbf4.jpg)
 
+## 可能会遇到的问题
+1. cublas64_10.ddl与cublasLt64_10.ddl文件导致错误，我的实验中本来是从cuda 11库直接复制过来的，但是是cublas64_11.ddl与cublasLt64_11.ddl，因此我将其重命名为cublas64_10.ddl与cublasLt64_10.ddl。如果有错，可以更具需要改回来。
+2. 脚本命令HRNet_segment_trt FCN_HRNet_W18_cityscapes_without_argmax_infer city_car_demo.png 2中需要图片格式.png或者.jpg需要加上。最后数字输入0则使用cpu推理。
+3. 显示未使用TensorRT加速，而是PDINFER，这是由于没有指定固定的输入形状input_shape，解决方法为在模型目录下的deploy.yml文件中，指定input的尺寸，例如将最后两个-1与-1改为256与512，重新输入脚本命令即可使用TensorRT推理。
 
 
